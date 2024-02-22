@@ -9,8 +9,8 @@ function renderTasks() {
     tasks.forEach((task, index) => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
-      <span>${task}</span>
-      <button onclick="removeTask(${index})">Remove</button>
+        <span>${task}</span>
+        <button onclick="removeTask(${index})">Remove</button>
     `;
         taskList.appendChild(listItem);
     });
