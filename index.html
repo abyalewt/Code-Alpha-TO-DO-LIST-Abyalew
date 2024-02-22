@@ -4,17 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Enhanced To-Do List</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>To-Do List</h1>
+        <h1>Enhanced To-Do List</h1>
         <div id="app">
             <input type="text" id="taskInput" placeholder="Add a new task...">
             <button onclick="addTask()">Add Task</button>
-            <ul id="taskList"></ul>
+
+            <section class="family">
+                <h2><i class="fas fa-home"></i> Family</h2>
+                <ul id="familyTasks" class="taskList"></ul>
+            </section>
+
+            <section class="personal">
+                <h2><i class="fas fa-user"></i> Personal</h2>
+                <ul id="personalTasks" class="taskList"></ul>
+            </section>
+
+            <section class="work">
+                <h2><i class="fas fa-briefcase"></i> Work</h2>
+                <ul id="workTasks" class="taskList"></ul>
+            </section>
         </div>
     </div>
     <script src="script.js"></script>
